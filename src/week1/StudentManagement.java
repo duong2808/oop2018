@@ -1,4 +1,4 @@
-﻿//package week1;
+﻿package week1;
 
 public class StudentManagement {
 
@@ -37,10 +37,6 @@ private void Showlist() {
     }
 
     void studentsByGroup() {
-        // TODO:
-    }
-
-    void removeStudent(String id) {
 	boolean A[] = new boolean[ssv];
 
 		for (int i = 0; i < ssv; i++) {
@@ -70,6 +66,26 @@ private void Showlist() {
 			}
 
 		}
+        // TODO:
+    }
+
+    void removeStudent(String id) {
+	for (int i = 0; i < ssv; i++) {
+
+			if (arrSv[i].getId().equals(id)) {
+
+				for (int j = 0; j < ssv; j++) {
+
+					arrSv[j] = arrSv[j + 1];
+
+				}
+
+			}
+
+			ssv--;
+
+		}
+	
         // TODO:
     }
 
