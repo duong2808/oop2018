@@ -44,9 +44,9 @@ public class Student {
     Student() {
         // TODO:
         name = "Student";
-		id = "000";
-		group = "INT22041";
-		email = "uet@gmail.com";
+	id = "000";
+	group = "INT22041";
+	email = "uet@gmail.com";
     }
 
     /**
@@ -58,7 +58,7 @@ public class Student {
     Student(String n, String sid, String em) {
         // TODO:
               // TODO:
-	    name = n;
+	name = n;
         id = sid;
         email = em;
         group = "INT22041";
@@ -71,18 +71,18 @@ public class Student {
     Student(Student s) {
         // TODO:
         name = s.name;
-		id = s.id;
-		group = s.group;
-		email = s.email;
+	id = s.id;
+	group = s.group;
+	email = s.email;
 
     }
 
     String getInfo() {
         // TODO:
         System.out.println("name:" + name);
-		System.out.println("id:" + id);
-		System.out.println("group:" + group);
-		System.out.println("email:" + email);
+	System.out.println("id:" + id);
+	System.out.println("group:" + group);
+	System.out.println("email:" + email);
         return null; // xóa dòng này sau khi cài đặt
     }
 }
