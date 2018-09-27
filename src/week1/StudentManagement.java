@@ -1,8 +1,12 @@
 ﻿<<<<<<< HEAD
+﻿<<<<<<< HEAD
 ﻿package week1;
 =======
 package week1;
 >>>>>>> parent of c569b75... update
+=======
+﻿//package week1;
+>>>>>>> parent of f251e6f... Revert "Revert "update""
 
 public class StudentManagement {
 
@@ -15,6 +19,13 @@ public class StudentManagement {
 
     void studentsByGroup() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        // TODO:
+    }
+
+    void removeStudent(String id) {
+>>>>>>> parent of f251e6f... Revert "Revert "update""
 	boolean A[] = new boolean[ssv];
 
 		for (int i = 0; i < ssv; i++) {
@@ -50,26 +61,6 @@ public class StudentManagement {
 
     void removeStudent(String id) {
 >>>>>>> parent of c569b75... update
-        // TODO:
-    }
-
-    void removeStudent(String id) {
-	for (int i = 0; i < ssv; i++) {
-
-			if (arrSv[i].getId().equals(id)) {
-
-				for (int j = 0; j < ssv; j++) {
-
-					arrSv[j] = arrSv[j + 1];
-
-				}
-
-			}
-
-			ssv--;
-
-		}
-	
         // TODO:
     }
 
