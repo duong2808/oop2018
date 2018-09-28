@@ -50,10 +50,12 @@ private int numerator, denominator;
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
         int e=this.numerator*other.denominator ;
 	int f=this.denominator*other.numerator;
-	if(f!=0){
+	if(f!=0)
+	{
 	Fraction f4=new Fraction(e,f);
 	return f4;
 	}
+    }
      public boolean equals(Object obj) {
  	Fraction p1= new Fraction(1,1);
          p1= this.subtract((Fraction)obj);
