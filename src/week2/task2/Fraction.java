@@ -55,6 +55,8 @@ private int numerator, denominator;
 	Fraction f4=new Fraction(e,f);
 	return f4;
 	}
+	    else 
+		return null;
     }
      public boolean equals(Object obj) {
  	Fraction p1= new Fraction(1,1);
