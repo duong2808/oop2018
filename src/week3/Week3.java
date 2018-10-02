@@ -12,18 +12,18 @@ public class Week3 {
         return -1;
     }
 
-    public static int minOfArray(int[] array) {
-        int a=array.length;
-        if(a>O){
+    public static int minOfArray(int[] array){
+        
+	if(array.length >0){
         int min=array[0];
-        for(int i=0;i<a;i++){
+        for(int i=0;i<array.length;i++){
             if(min>array[i]){
                min=array[i];
                 }
             }
         return min;
             }
-        else
+	else
         return -1;
         // TODO: Tìm giá trị nhỏ nhất của của một mảng số nguyên (kích thước mảng <= 100 phần tử
     }
