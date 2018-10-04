@@ -14,7 +14,7 @@ public class Week3 {
 
     public static int minOfArray(int[] array){
         
-	if(array.length >0){
+	if(array.length >0 && array.length <100){
         int min=array[0];
         for(int i=0;i<array.length;i++){
             if(min>array[i]){
