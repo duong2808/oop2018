@@ -49,11 +49,11 @@ public void testminOfArray5(){
     assertEquals(min,39);
 }
 public void testcalculateBMI(){
-    Asert.assertEquals(" ",week3.Week3.calculateBMI(2,1));
-    Asert.assertEquals(" ",week3.Week3.calculateBMI(2,1));
-    Asert.assertEquals(" ",week3.Week3.calculateBMI(2,1));
-    Asert.assertEquals(" ",week3.Week3.calculateBMI(2,1));
-    Asert.assertEquals(" ",week3.Week3.calculateBMI(2,1));
+    Asert.assertEquals("Thiếu cân",week3.Week3.calculateBMI(46,1.60));
+    Asert.assertEquals("Bình thường",week3.Week3.calculateBMI(62,1.70));
+    Asert.assertEquals("Thừa cân",week3.Week3.calculateBMI(67,1.67));
+    Asert.assertEquals("Béo phì",week3.Week3.calculateBMI(70,1.65));
+    Asert.assertEquals("Thiếu cân",week3.Week3.calculateBMI(40.5,1.5));
     
     }
     // TODO: Viết 5 testcase cho phương thức max()
