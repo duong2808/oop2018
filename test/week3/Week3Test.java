@@ -45,6 +45,7 @@ public void testminOfArray4(){
     min=Week3.testminOfArray(array4);
     assertEquals(min,1);
 }
+@Test
 public void testminOfArray5(){
     min=week3.Week3.testminOfArray(array5);
     assertEquals(min,39);
