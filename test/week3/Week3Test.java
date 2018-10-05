@@ -12,7 +12,6 @@ import org.junit.Assert;
 import static org.junit.Assert.*;
 
 import static week3.Week3.max;
-@Test
 public class Week3Test {
     int min=0;
     int[] array1={3,2,1};
