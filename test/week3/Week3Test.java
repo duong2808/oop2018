@@ -56,23 +56,23 @@ public void testminOfArray5(){
      Assert.assertEquals(min,39);
 }
 @Test
-public void testcalculateBMI(){
+public void testcalculateBMI1(){
     assertEquals("Thiếu cân",Week3.calculateBMI(46,1.60));
 }
     @Test
-public void testcalculateBMI(){
+public void testcalculateBMI2(){
     assertEquals("Bình thường",Week3.calculateBMI(62,1.70));
 }
     @Test
-public void testcalculateBMI(){
+public void testcalculateBMI3(){
     assertEquals("Thừa cân",Week3.calculateBMI(67,1.67));
 }
     @Test
-public void testcalculateBMI(){
+public void testcalculateBMI4(){
     assertEquals("Béo phì",Week3.calculateBMI(70,1.65));
 }
     @Test
-public void testcalculateBMI(){
+public void testcalculateBMI5(){
     assertEquals("Thiếu cân",Week3.calculateBMI(40.5,1.5));
     
     }
