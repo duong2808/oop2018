@@ -15,7 +15,7 @@ public void testmax1(){
 }
  @Test    
 public void testmax2(){
-    Assert.assertEquals(-1,Week3.max(1,1));
+    Assert.assertEquals(2,Week3.max(2,0));
 }
     @Test    
 public void testmax3(){
