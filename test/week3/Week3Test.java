@@ -21,11 +21,11 @@ public class Week3Test {
     int[] array5={99,103,63,39,108,202};
 @Test    
 public void testmax(){
-     Asert.assertEquals(2,week3.Week3.max(2,1));
-     Asert.assertEquals(-1,week3.Week3.max(1,1));
-     Asert.assertEquals(100,week3.Week3.max(100,80));
-     Asert.assertEquals(28,week3.Week3.max(8,28));
-     Asert.assertEquals(36,week3.Week3.max(32,36));
+     Assert.assertEquals(2,week3.Week3.max(2,1));
+     Assert.assertEquals(-1,week3.Week3.max(1,1));
+     Assert.assertEquals(100,week3.Week3.max(100,80));
+     Assert.assertEquals(28,week3.Week3.max(8,28));
+     Assert.assertEquals(36,week3.Week3.max(32,36));
     }
 @Test
 public void testminOfArray1(){
@@ -53,11 +53,11 @@ public void testminOfArray5(){
 }
 @Test
 public void testcalculateBMI(){
-    Asert.assertEquals("Thiếu cân",week3.Week3.calculateBMI(46,1.60));
-    Asert.assertEquals("Bình thường",week3.Week3.calculateBMI(62,1.70));
-    Asert.assertEquals("Thừa cân",week3.Week3.calculateBMI(67,1.67));
-    Asert.assertEquals("Béo phì",week3.Week3.calculateBMI(70,1.65));
-    Asert.assertEquals("Thiếu cân",week3.Week3.calculateBMI(40.5,1.5));
+    Assert.assertEquals("Thiếu cân",week3.Week3.calculateBMI(46,1.60));
+    Assert.assertEquals("Bình thường",week3.Week3.calculateBMI(62,1.70));
+    Assert.assertEquals("Thừa cân",week3.Week3.calculateBMI(67,1.67));
+    Assert.assertEquals("Béo phì",week3.Week3.calculateBMI(70,1.65));
+    Assert.assertEquals("Thiếu cân",week3.Week3.calculateBMI(40.5,1.5));
     
     }
     // TODO: Viết 5 testcase cho phương thức max()
