@@ -1,5 +1,4 @@
 package week3;
-import week3.Week3.*;
 import org.junit.Test;
 import org.junit.Assert;
 
