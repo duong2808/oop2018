@@ -9,7 +9,7 @@ public class Week3 {
             }
         else
         // TODO: Tìm giá trị lớn nhất của hai số nguyên, giá trị trả về của hàm là số lớn nhất
-        return -1;
+        return n;
     }
 
     public static int minOfArray(int[] array){
