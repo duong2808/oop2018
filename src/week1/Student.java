@@ -1,88 +1,133 @@
-private String name, id, group, email;
+package week1;
 
-	public void setName(String name) {
-		this.name = name;
-	}
 
-	public String getName() {
-		return name;
-	}
 
-	public void setId(String id) {
-		this.id = id;
-	}
+class Student {
 
-	public String getId() {
-		return id;
-	}
 
-	public void setGroup(String group) {
-		this.group = group;
-	}
-
-	public String getGroup() {
-		return group;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getEmail() {
-		return email;
-	}package week1;
-
-public class Student {
 
     // TODO: khai báo các thuộc tính cho Student
 
+
+
+    private String name;
+
+    private String group;
+
+    private String id;
+
+    private String email;
+
+
+
     // TODO: khai báo các phương thức getter, setter cho Student
 
+    public String getName() { return name;}
+
+    public void setName(String _name) { name =_name ;}
+
+
+
+    public String getGroup() { return group;}
+
+    public void setGroup(String _group) { group = _group ;}
+
+
+
+    public String getId() { return id;}
+
+    public void setId(String _Id) { id = _Id ;}
+
+
+
+    public String getEmail() { return email;}
+
+    public void setEmail(String _email) { email = _email ;}
+
+
+
     /**
+
      * Constructor 1
+
      */
+
     Student() {
-        // TODO:
-        name = "Student";
-	id = "000";
-	group = "INT22041";
-	email = "uet@gmail.com";
-    }
+
+        name="Student";
+
+        group="INT22041";
+
+        id="000";
+
+        email="uet@vnu.edu.vn";
+
+    } //
+
+
 
     /**
+
      * Constructor 2
+
      * @param n
+
      * @param sid
+
      * @param em
+
      */
+
     Student(String n, String sid, String em) {
+
         // TODO:
-              // TODO:
-	name = n;
-        id = sid;
-        email = em;
-        group = "INT22041";
+
+        name=n;
+
+        id=sid;
+
+        email=em;
+
+        group="INT22041";
+
     }
+
+
 
     /**
+
      * Constructor 3
+
      * @param s
+
      */
+
     Student(Student s) {
+
+        name= s.name;
+
+        id=s.id;
+
+        group=s.group;
+
+        email=s.email;
+
         // TODO:
-        name = s.name;
-	id = s.id;
-	group = s.group;
-	email = s.email;
 
     }
+
+
 
     String getInfo() {
+
+        System.out.println("Sinh vien "+ name+ " hoc lop "+ group+" co id va email "+ id+","+ email);
+
         // TODO:
-        System.out.println("name:" + name);
-	System.out.println("id:" + id);
-	System.out.println("group:" + group);
-	System.out.println("email:" + email);
+
         return null; // xóa dòng này sau khi cài đặt
+
     }
+
 }
+	
+    
