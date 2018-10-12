@@ -40,7 +40,6 @@ public class Task1 {
 	public static void main(String[] args){
 		gcd(6,8);
 		System.out.println(fibonacci(6));
-        // TODO: Tìm số fibonacci ở vị trí n
-        return 0;
+        // TODO: Tìm số fibonacci ở vị trí
     }
 }
