@@ -1,62 +1,92 @@
 package week1;
 
-public class StudentManagement {
-    
-    private Student arrSv[] = new Student[100];
-    private int ssv = 0;
-    // TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
-        private void list(Student sv) {
 
-		if (ssv > 100)
-			System.out.println("so sing vien qua lon");
+
+
+
+public class StudentManagement {
+
+
+
+	// TODO: khai báo thuộc tính students là array chứa các đối tượng thuộc lớp Student (max. 100)
+
+	private Student[] students= new Student[100];
+
+	int count=0;
+
+
+
+
+
+
+
+	public boolean sameGroup(Student s1, Student s2) {
+
+		// TODO:
+
+		String gr1= s1.getGroup();
+
+		String gr2= s2.getGroup();
+
+		return gr1.equals(gr2);
+
+		// xóa dòng này sau khi cài đặt
+
+	}
+
+	public void list(Student stu) {
+
+		if(count>100) System.out.println("Vuot qua so luong sinh vien cho phep");
 
 		else {
 
-			arrSv[ssv] = sv;
+			students[count] = stu;
 
-			ssv++;
-
-		}
-
-	}
-
-	private void Showlist() {
-
-		for (int j = 0; j < ssv; j++) {
-
-			System.out.println(arrSv[j].getName() + " ");
+			count++;
 
 		}
 
 	}
-    public boolean sameGroup(Student s1, Student s2) {
-        // TODO:
-        return s1.getGroup().equals(s2.getGroup());
-        
-        return false; // xóa dòng này sau khi cài đặt
-    }
 
-    void studentsByGroup() {
-        // TODO:
-        boolean A[] = new boolean[ssv];
 
-		for (int i = 0; i < ssv; i++) {
+
+	public void Showlist() {
+
+		for(int i=0;i<count;i++) {
+
+			System.out.println(students[i].getName()+ " ");
+
+		}
+
+
+
+	}
+
+	void studentsByGroup() {
+
+		// TODO:
+
+		boolean A[] = new boolean[count];
+
+		for (int i = 0; i < count; i++) {
 
 			A[i] = true;
 
 		}
 
-		for (int i = 0; i < ssv; i++) {
+		for (int i = 0; i < count; i++) {
 
-			if (A[i]) {
+			if (A[i] == true) {
 
-				System.out.print("Sinh vien thuoc lop " + arrSv[i].getGroup() + ": ");
+				String t = students[i].getGroup();
 
-				for (int j = 0; j < ssv; j++) {
+				System.out.print("Sinh vien thuoc lop " + t + " bao gom: ");
 
-					if (arrSv[j] == arrSv[j]) {
+				for (int j = 0; j < count; j++) {
 
-						System.out.print(arrSv[j].getName() + ", ");
+					if (students[j].getGroup().equals(t)) {
+
+						System.out.print(students[j].getName()+ " ");
 
 						A[j] = false;
 
@@ -66,99 +96,124 @@ public class StudentManagement {
 
 			}
 
+			System.out.print("\n");
+
 		}
 
-    }
+	}
 
-    void removeStudent(String id) {
-        // TODO:
-        for (int i = 0; i < ssv; i++) {
 
-			if (arrSv[i].getId().equals(id)) {
 
-				for (int j = 0; j < ssv; j++) {
 
-					arrSv[j] = arrSv[j + 1];
+
+	void removeStudent(String id){
+
+		for (int i = 0; i < count; i++) {
+
+			if (students[i].getId() == id) {
+
+				for (int j = i; j < count-1 ; j++) {
+
+					students[j] = students[j + 1];
 
 				}
 
+				count--;
+
 			}
 
-			ssv--;
-    }
+		}
 
-    public static void main(String[] args) {
-        // TODO:
-        System.out.println("\n ");
-		
-		Student s1 = new Student();
-		
-		s1.setName("Cao Thi Thuy Duong");
-		
-		s1.setId("17020653");
-		
-		s1.setGroup("INT22025");
-		
-		s1.setEmail("caoduong939@gmail.com");
-		
-		s1.getInfo();
-		
-		System.out.println("\n ");
+	}
 
-		Student s2 = new Student();
-		
-		s2.getInfo();
-		
-		System.out.println("\n ");
 
-		Student s3 = new Student("Luu Thi Thu Hoai", "17020702", "hoaidien@gmail.com");
-		
-		s3.getInfo();
-		
-		System.out.println("\n ");
 
-		Student s5 = new Student("Thu Huong", "17020655", "thuhuong10101@gmail.com");
+	public static void main(String[] args) {
 
-		Student s4 = new Student(s2);
-		
-		s4.getInfo();
-		
-		
-		
-		StudentManagement Danhsach = new StudentManagement();
+		// TODO:
 
-		Danhsach.sameGroup(s3, s4);
-		
-		System.out.println(" \n sinh vien so 3 va so 4 cung lop");
-		
-		System.out.println(Danhsach.sameGroup(s3, s4));
-		
-		Danhsach.sameGroup(s1, s4);
-		
-		System.out.println(" \n sinh vien so 1 va so 4 cung lop");
-		
-		System.out.println(Danhsach.sameGroup(s1, s4));
-		
+		StudentManagement list1= new StudentManagement();
 
-		Danhsach.list(s1);
-		
-		Danhsach.list(s2);
-		
-		Danhsach.list(s3);
-		
-		Danhsach.list(s5);
-		
-		System.out.println(" danh sach sinh vien khi chua xao");
-		
-		Danhsach.Showlist();
+		Student studen1= new Student();
 
-		Danhsach.removeStudent("17020655");
+		studen1.setName("Thanh Quy");
+
+		studen1.setEmail("thanhquysakura2911@gmail.com");
+
+		studen1.setGroup("INT22042");
+
+		studen1.setId("17020991");
+
+		String myname= studen1.getName();
+
+		System.out.println(myname);
+
+		studen1.getInfo();
+
+
+
+		Student studen11= new Student();
+
+		studen11.setName("Thanh ly");
+
+		studen11.setEmail("thanhquysakura2911@gmail.com");
+
+		studen11.setGroup("INT22044");
+
+		studen11.setId("17020991");
+
+		String myname1= studen11.getName();
+
+
+
+
+
+
+
+		Student student2= new Student("Huyen Thanh","17020889","anhTho@gmail.com");
+
+		Student student3= new Student("Nguyen Duong","17020879","batbat@gmail.com");
+
+		Student student4 = new Student(studen1);
+
+		student2.getInfo();
+
+		student3.getInfo();
+
+		student4.getInfo();
+
+		System.out.println(list1.sameGroup(student2, student3));
+
+		System.out.println(list1.sameGroup(student2, student4));
+
+
+
+		list1.list(student2); list1.list(student3); list1.list(student4); list1.list(studen11);
+
+		System.out.println("Danh sach sv trc khi xoa: ");
+
+		list1. Showlist();
+
+
+
+		list1.removeStudent("17020879");
 
 		System.out.println("Danh sach sv sau khi xoa: ");
 
-		Danhsach.Showlist();
+		list1. Showlist();
 
-		Danhsach.studentsByGroup();
 
-    }
+
+		list1.studentsByGroup();
+
+
+
+
+
+
+
+
+
+	}
+
 }

@@ -31,27 +31,27 @@ public void testmax5(){
     }
 @Test
 public void testminOfArray1(){
-    min=Week3.testminOfArray(array1);
+    min=Week3.minOfArray(array1);
       Assert.assertEquals(min,1);
 }
 @Test
 public void testminOfArray2(){
-    min=Week3.testminOfArray(array2);
+    min=Week3.minOfArray(array2);
      Assert.assertEquals(min,13);
 }
 @Test
 public void testminOfArray3(){
-    min=Week3.testminOfArray(array3);
+    min=Week3.minOfArray(array3);
      Assert.assertEquals(min,0);
 }
 @Test
 public void testminOfArray4(){
-    min=Week3.testminOfArray(array4);
+    min=Week3.minOfArray(array4);
      Assert.assertEquals(min,1);
 }
 @Test
 public void testminOfArray5(){
-    min=week3.Week3.testminOfArray(array5);
+    min=week3.Week3.minOfArray(array5);
      Assert.assertEquals(min,39);
 }
 @Test

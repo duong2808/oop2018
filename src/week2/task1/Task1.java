@@ -41,6 +41,5 @@ public class Task1 {
 		gcd(6,8);
 		System.out.println(fibonacci(6));
         // TODO: Tìm số fibonacci ở vị trí n
-        return 0;
     }
 }
