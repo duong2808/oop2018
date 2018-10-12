@@ -1,38 +1,24 @@
 package week4.task2;
 
 public class Square extends Rectangle{
-
     int Side;
-
     public Square() {}
-
     public Square(int side) {
-
         Side = side;
-
     }
 
     public Square(String _color, Boolean _Filled, double width, double length, int side) {
-
-
+        
         Side = side;
-
     }
-
-
 
     public void setSide(int side) {
-
         Side = side;
-
     }
-
-
-
+    
     public int getSide() {
 
         return Side;
-
     }
 
 
@@ -46,15 +32,9 @@ public class Square extends Rectangle{
      */
 
     @Override
-
     public void setWidth(double side) {
-
         super.setWidth(side);
-
     }
-
-
-
     @Override
 
     public double getWidth() {
@@ -62,9 +42,6 @@ public class Square extends Rectangle{
         return super.getWidth();
 
     }
-
-
-
     /**
 
      * định nghĩa lại giá trị cho length
@@ -78,10 +55,7 @@ public class Square extends Rectangle{
     public void setLength(double side) {
 
         super.setLength(side);
-
     }
-
-
 
     @Override
 
