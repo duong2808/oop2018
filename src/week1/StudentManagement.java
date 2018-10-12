@@ -33,7 +33,7 @@ public class StudentManagement {
         // TODO:
         return s1.getGroup().equals(s2.getGroup());
         
-        return false; // xóa dòng này sau khi cài đặt
+        // xóa dòng này sau khi cài đặt
     }
 
     void studentsByGroup() {
@@ -86,6 +86,7 @@ public class StudentManagement {
 
 			ssv--;
     }
+}
 
     public static void main(String[] args) {
         // TODO:
