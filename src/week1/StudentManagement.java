@@ -33,7 +33,7 @@ public class StudentManagement {
         // TODO:
         return s1.getGroup().equals(s2.getGroup());
         
-         // xóa dòng này sau khi cài đặt
+        return false; // xóa dòng này sau khi cài đặt
     }
 
     void studentsByGroup() {
@@ -71,8 +71,8 @@ public class StudentManagement {
     }
 
     void removeStudent(String id) {
-		// TODO:
-		for (int i = 0; i < ssv; i++) {
+        // TODO:
+        for (int i = 0; i < ssv; i++) {
 
 			if (arrSv[i].getId().equals(id)) {
 
@@ -85,8 +85,7 @@ public class StudentManagement {
 			}
 
 			ssv--;
-		}
-	}
+    }
 
     public static void main(String[] args) {
         // TODO:
@@ -115,9 +114,9 @@ public class StudentManagement {
 		Student s3 = new Student("Luu Thi Thu Hoai", "17020702", "hoaidien@gmail.com");
 		
 		s3.getInfo();
-
 		
 		System.out.println("\n ");
+
 		Student s5 = new Student("Thu Huong", "17020655", "thuhuong10101@gmail.com");
 
 		Student s4 = new Student(s2);
