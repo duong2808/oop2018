@@ -34,7 +34,7 @@ public class Circle extends Shape{
         }
 
         public static void main(String[] args) {
-            week4.task2.Circle ac =new week4.task2.Circle(3.0, "do", true);
+            Circle ac =new Circle(3.0, "do", true);
             System.out.println("Dien tich hinh chu nhat: "+ac.getArea());
             System.out.println(("Chu vi hinh tron: "+ac.Perimeter()));
         }
