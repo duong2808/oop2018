@@ -17,7 +17,7 @@ public class Numeral extends Expression{
 
     @Override
     public String toString() {
-        return "Sô hạng là: "+value;
+        return "So hang la: "+value;
     }
 
     @Override

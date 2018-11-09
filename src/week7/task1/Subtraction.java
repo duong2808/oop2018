@@ -21,7 +21,7 @@ public class Subtraction extends BinaryExpression {
     @Override
     public String toString() {
         int a= left.evaluate()-right.evaluate();
-        return "thương là :"+a;
+        return "hieu la :"+a;
     }
 
     @Override

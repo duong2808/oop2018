@@ -22,7 +22,7 @@ public class Division extends BinaryExpression {
     public String toString() {
         try{
             int a= left.evaluate()/right.evaluate();
-            return " Thương là"+a;
+            return " Thuong la"+a;
         }
         catch(ArithmeticException e){
             return "Error ArithmeticException";

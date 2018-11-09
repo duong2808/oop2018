@@ -13,7 +13,7 @@ public class Square extends Numeral {
 
     public String toString() {
 
-        return "Bình phương là: "+ expression.evaluate()*expression.evaluate()  ;
+        return "Binh phuong la: "+ expression.evaluate()*expression.evaluate()  ;
 
     }
 

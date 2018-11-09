@@ -21,7 +21,7 @@ public class Multiplication extends BinaryExpression {
     @Override
     public String toString() {
         int a= left.evaluate()*right.evaluate();
-        return"Tich là"+a;
+        return"Tich la"+a;
     }
 
     @Override

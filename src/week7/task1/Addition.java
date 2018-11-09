@@ -21,11 +21,12 @@ public class Addition extends BinaryExpression{
     @Override
     public String toString() {
         int a= left.evaluate()+right.evaluate();
-        return "Tổng là: " + a;
+        return "Tong la: " + a;
     }
 
     @Override
     public int evaluate() {
+
         return left.evaluate()+right.evaluate();
     }
 }
